@@ -53,7 +53,12 @@ export class Librarian {
     // 3. Save Raw (The Letter)
     const filename = 'index.html'; // Simplification for v1
     const rawFilePath = path.join(rawPath, filename);
-    fs.writeFileSync(rawFilePath, content);
+    
+    // SANITIZATION: Scrub potential API keys to prevent false positives in secret scanning
+    // Matches Google API Key pattern: AIzaSy[a-zA-Z0-9_-]{33}
+    const sanitizedContent = content.replace(/AIzaSy[a-zA-Z0-9_-]{33}/g, 'AIzaSy_REDACTED_BY_THEESEEKS');
+    
+    fs.writeFileSync(rawFilePath, sanitizedContent);
 
     // 4. Create Manifest
     const manifest: LibraryManifest = {
