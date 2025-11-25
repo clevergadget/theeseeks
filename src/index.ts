@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
 import chalk from 'chalk';
+import fs from 'fs';
+import path from 'path';
+import { Gatekeeper } from './core/gatekeeper.js';
+import { Shadow } from './io/shadow.js';
+import { Scribe, type ContextItem } from './core/scribe.js';
 
 const program = new Command();
 
@@ -18,10 +23,58 @@ program.command('init')
 
 program.command('ask')
   .argument('<query>', 'The question you seek to answer')
+  .option('-f, --file <path>', 'Specific file to include context for')
   .description('Ask a question to the Advisor')
-  .action((query) => {
+  .action(async (query, options) => {
+    const reflection = await Gatekeeper.analyze(query);
+
+    if (reflection.state !== 'Calm') {
+      console.log(chalk.yellow(`\n(The Gatekeeper steps forward)`));
+      console.log(chalk.yellow(`"${reflection.message}"`));
+      if (reflection.suggestion) {
+        console.log(chalk.dim(`\nPerhaps you meant:\n"${reflection.suggestion}"`));
+      }
+      console.log(chalk.dim('\n-----------------------------------\n'));
+    }
+
     console.log(chalk.blue(`The Covenant is active. You ask: "${query}"`));
-    // Future logic: Invoke Gatekeeper, Assembly, and Output
+    
+    // Assembly
+    const items: ContextItem[] = [];
+    if (options.file) {
+        try {
+            const rawContent = fs.readFileSync(options.file, 'utf-8');
+            const companionContent = Shadow.read(options.file);
+            items.push({
+                path: options.file,
+                rawContent,
+                companionContent
+            });
+            console.log(chalk.dim(`> Retrieved artifact: ${options.file}`));
+            if (companionContent) {
+                console.log(chalk.dim(`> Retrieved companion: ${Shadow.getCompanionPath(options.file)}`));
+            }
+        } catch (err) {
+            console.error(chalk.red(`Could not read file: ${options.file}`));
+        }
+    }
+
+    // Scribe
+    const scroll = Scribe.generateScroll(query, reflection, items);
+    
+    // Output to file
+    const outputDir = path.join(process.cwd(), '.theeseeks');
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+    }
+    const outputPath = path.join(outputDir, 'scroll.md');
+    fs.writeFileSync(outputPath, scroll);
+
+    console.log(chalk.green(`\n> Context Scroll generated.`));
+    console.log(chalk.dim(`> Artifact saved to: ${outputPath}`));
+    console.log(chalk.dim('-----------------------------------'));
+    console.log(scroll);
+    console.log(chalk.dim('-----------------------------------'));
   });
 
 program.parse();
