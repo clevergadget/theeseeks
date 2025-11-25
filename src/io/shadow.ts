@@ -25,6 +25,19 @@ export class Shadow {
     }
     return null;
   }
+
+  static isDrifting(rawPath: string): boolean {
+    const companionPath = this.getCompanionPath(rawPath);
+    if (!fs.existsSync(companionPath) || !fs.existsSync(rawPath)) {
+        return false; // Cannot drift if one doesn't exist
+    }
+    
+    const rawStats = fs.statSync(rawPath);
+    const companionStats = fs.statSync(companionPath);
+
+    // If Raw is newer than Companion, we have drift.
+    return rawStats.mtime > companionStats.mtime;
+  }
   
   static ensureStructure(rawPath: string): void {
      const companionPath = this.getCompanionPath(rawPath);

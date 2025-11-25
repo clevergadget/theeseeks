@@ -10,6 +10,10 @@ export interface SeekerProfileData {
     sessions: number;
     wearinessCount: number;
     franticCount: number;
+    tokensSaved: number; // Cumulative Burden Delta
+    totalTokensEstimated: number; // Cumulative tokens sent across the bridge
+    resonanceSum: number; // Sum of all resonance scores (1-5)
+    resonanceCount: number; // Number of rated sessions
   };
 }
 
@@ -35,7 +39,11 @@ export class SeekerProfile {
       stats: {
         sessions: 0,
         wearinessCount: 0,
-        franticCount: 0
+        franticCount: 0,
+        tokensSaved: 0,
+        totalTokensEstimated: 0,
+        resonanceSum: 0,
+        resonanceCount: 0
       }
     };
 

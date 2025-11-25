@@ -7,8 +7,41 @@ import { Gatekeeper } from './core/gatekeeper.js';
 import { Shadow } from './io/shadow.js';
 import { SeekerProfile } from './io/profile.js';
 import { Scribe, type ContextItem } from './core/scribe.js';
+import { Bridge } from './core/bridge.js';
+import readline from 'readline';
 
 const program = new Command();
+
+function askConsent(question: string): Promise<boolean> {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+    return new Promise((resolve) => {
+        rl.question(question, (answer) => {
+            rl.close();
+            resolve(answer.toLowerCase() !== 'n');
+        });
+    });
+}
+
+function askResonance(): Promise<number | null> {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+    return new Promise((resolve) => {
+        rl.question(chalk.white('\nHow did this resonate? (1-5, Enter to skip): '), (answer) => {
+            rl.close();
+            const score = parseInt(answer);
+            if (!isNaN(score) && score >= 1 && score <= 5) {
+                resolve(score);
+            } else {
+                resolve(null);
+            }
+        });
+    });
+}
 
 program
   .name('seeks')
@@ -63,14 +96,20 @@ program.command('ask')
         try {
             const rawContent = fs.readFileSync(options.file, 'utf-8');
             const companionContent = Shadow.read(options.file);
+            const isDrifting = Shadow.isDrifting(options.file);
+            
             items.push({
                 path: options.file,
                 rawContent,
-                companionContent
+                companionContent,
+                isDrifting
             });
             console.log(chalk.dim(`> Retrieved artifact: ${options.file}`));
             if (companionContent) {
                 console.log(chalk.dim(`> Retrieved companion: ${Shadow.getCompanionPath(options.file)}`));
+                if (isDrifting) {
+                    console.log(chalk.yellow(`> ⚠️  Drift Detected: Companion is older than Source.`));
+                }
             }
         } catch (err) {
             console.error(chalk.red(`Could not read file: ${options.file}`));
@@ -78,7 +117,7 @@ program.command('ask')
     }
 
     // Scribe
-    const scroll = Scribe.generateScroll(query, reflection, items, profile);
+    const { scroll, metrics } = Scribe.generateScroll(query, reflection, items, profile);
     
     // Output to file
     const outputDir = path.join(process.cwd(), '.theeseeks');
@@ -93,6 +132,47 @@ program.command('ask')
     console.log(chalk.dim('-----------------------------------'));
     console.log(scroll);
     console.log(chalk.dim('-----------------------------------'));
+
+    // The Ritual of the Seal
+    console.log(chalk.cyan(`\n[The Ritual of the Seal]`));
+    console.log(chalk.cyan(`Weight: ~${metrics.estimatedTotalTokens} tokens.`));
+    if (metrics.burdenDelta > 0) {
+        console.log(chalk.green(`Burden Lifted: ~${metrics.burdenDelta} tokens saved by the Shadow Library.`));
+    }
+    
+    const consented = await askConsent(chalk.white('Do you consent to cast this across the Bridge? (Y/n) '));
+    
+    if (!consented) {
+        console.log(chalk.yellow('\nThe Scroll is sealed but not sent. It remains in .theeseeks/scroll.md'));
+        return;
+    }
+
+    // Update Profile Stats with Metrics
+    if (profile) {
+        profile.stats.tokensSaved = (profile.stats.tokensSaved || 0) + metrics.burdenDelta;
+        profile.stats.totalTokensEstimated = (profile.stats.totalTokensEstimated || 0) + metrics.estimatedTotalTokens;
+        SeekerProfile.save(profile);
+    }
+
+    console.log(chalk.blue('\nThe Bridge opens...'));
+    try {
+        const response = await Bridge.cross(scroll);
+        console.log(chalk.green('\nThe Advisor speaks:\n'));
+        console.log(response);
+
+        // The Resonance (Phase 4)
+        const resonance = await askResonance();
+        if (resonance !== null && profile) {
+            profile.stats.resonanceSum = (profile.stats.resonanceSum || 0) + resonance;
+            profile.stats.resonanceCount = (profile.stats.resonanceCount || 0) + 1;
+            SeekerProfile.save(profile);
+            console.log(chalk.dim(`> Resonance recorded. (Avg: ${(profile.stats.resonanceSum / profile.stats.resonanceCount).toFixed(1)})`));
+        }
+
+    } catch (e) {
+        console.error(chalk.red('\nThe Bridge collapsed.'));
+        if (e instanceof Error) console.error(chalk.red(e.message));
+    }
   });
 
 program.parse();

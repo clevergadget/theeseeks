@@ -32,16 +32,15 @@ We move from *Structure* to *Flow*, and from *Flow* to *Life*.
 
 ---
 
-## Phase 3: The Bridge (From Scroll to Voice)
+## Phase 3: The Bridge (Active)
 **The Concept:** Connection.
-Currently, we generate the **Context Scroll**, but it lies silent in a file. The manual labor of moving it is a ritual, but it is also toil. We must resolve the contradiction between *Mindfulness* (feeling the weight) and *Flow* (removing the friction).
+We have resolved the contradiction between *Mindfulness* and *Flow*.
 
-*   **The Goal:** To allow the `seeks` tool to summon the Advisor directly, without losing the weight of the act.
-*   **The Synthesis (The Ritual of the Seal):**
-    *   The tool generates the Scroll and calculates its "Weight" (Token cost, Complexity warnings, Emotional burden).
+*   **The Implementation:**
+    *   The tool generates the Scroll and calculates its "Weight" (Token cost).
     *   It pauses at the precipice. It presents this Weight to the Seeker.
-    *   The Seeker must perform a **Sign of Consent** (a specific keystroke or command) to "Seal" the scroll and cast it across the bridge.
-    *   *Result:* We remove the toil of the clipboard, but keep the mindfulness of the authorization.
+    *   The Seeker performs the **Sign of Consent** (Y/n) to "Seal" the scroll and cast it across the bridge.
+    *   The Advisor responds directly in the terminal.
 *   **The Cultural Value:** **Clarity & Consent.** We do not automate the ask; we facilitate it, requiring a moment of conscious intent before the machine speaks.
 
 ## Phase 4: The Mirror (The Gamble's Proof)
