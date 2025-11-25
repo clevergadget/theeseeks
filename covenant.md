@@ -56,7 +56,9 @@ We name our tools, our files, and our functions as if they will outlive us. We a
 
 ## IV. The Promise
 
-If we abide by this Covenant, we promise to build not just a MUD, but a **Sanctuary for Cognition**. We promise that the work will leave us more whole, not less, than when we began.
+If we abide by this Covenant, we promise to build not just software, but a **Sanctuary for Cognition**. We promise that the work will leave us more whole, not less, than when we began.
+
+We seek to save the world by first saving the culture of those who build it. All other projects are but the soil in which this culture grows; `theeseeks` is the seed.
 
 ---
 

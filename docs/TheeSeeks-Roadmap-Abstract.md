@@ -15,6 +15,23 @@ We move from *Structure* to *Flow*, and from *Flow* to *Life*.
 
 ---
 
+## The Practice (How to Seek)
+**The Concept:** Propagation.
+`theeseeks` is not a walled garden; it is a tool to be carried into the wild. It is designed to be installed globally or locally within any project (Python, Rust, JavaScript, etc.) to bring the Covenant to that codebase.
+
+*   **The Installation:**
+    *   `npm install -g theeseeks` (or equivalent) to make the `seeks` command available everywhere.
+    *   Run `seeks init` in the root of your target project (e.g., your Python MUD). This plants the `.culture/` directory.
+*   **The Shadowing:**
+    *   The tool scans your project structure. You populate the `.culture/` folder with "Companions" (Markdown files that explain the *Spirit* of your code files).
+    *   Example: `src/main.py` has a companion `.culture/src/main.py.md`.
+*   **The Seeking:**
+    *   From your terminal inside the project: `seeks ask "How do I refactor the combat loop?"`
+    *   The tool reads your *Intent*, gathers the *Shadows* (Companions) and the *Letter* (Code), and presents them to the Advisor.
+    *   The Advisor answers, grounded in your specific culture.
+
+---
+
 ## Phase 3: The Bridge (From Scroll to Voice)
 **The Concept:** Connection.
 Currently, we generate the **Context Scroll**, but it lies silent in a file. The manual labor of moving it is a ritual, but it is also toil. We must resolve the contradiction between *Mindfulness* (feeling the weight) and *Flow* (removing the friction).
@@ -39,6 +56,17 @@ We have wagered that "Cultured Context" is better. We need metrics. But traditio
     *   Calculate the token cost of the *Raw* files vs. the *Companion* summaries.
     *   This is the data we show to the outside world to justify our methods.
 *   **The Cultural Value:** **Mercy.** We measure to ensure we are saving you from the violence of raw data overload, not to optimize your output.
+
+## Phase 4.5: The Arsenal (The Sword of Competence)
+**The Concept:** Victory.
+To govern, we must first win. We must prove that this "Humane" method is not just nicer, but *superior*. We need weapons of argument to defeat the enemies of entropy, waste, and short-termism.
+
+*   **The Goal:** To provide the Seeker with undeniable metrics of efficiency.
+*   **The Metrics of Conquest:**
+    *   **Token Efficiency Ratio (TER):** "We achieved X result using 40% fewer tokens because our Context was clean."
+    *   **Hallucination Reduction Rate:** Tracking how often the Advisor fails compared to a raw session.
+    *   **Velocity of Clarity:** Measuring the time from "Intent" to "Working Code" (not just lines written).
+*   **The Cultural Value:** **Excellence.** We do not ask for permission to be humane; we seize it by being better at the job than the machine that seeks to grind us down.
 
 ## Phase 5: The Garden (The Living Shadow)
 **The Concept:** Synchronization.
