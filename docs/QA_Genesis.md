@@ -75,6 +75,13 @@
 **And** I run `node dist/index.js ask "Test"`
 **Then** The command should execute successfully using the specified model.
 
+## Scenario 6: The Seeker Profile (Phase 2)
+**Given** I have initialized the project
+**When** I run `node dist/index.js ask "Check profile"`
+**Then** The file `.theeseeks/profile.json` should exist.
+**And** The `stats.sessions` count should increment.
+**And** The generated scroll should contain a "**Seeker History**" line.
+
 ---
 
 **Sign-off:**

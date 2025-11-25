@@ -1,4 +1,5 @@
 import type { Reflection } from './gatekeeper.js';
+import type { SeekerProfileData } from '../io/profile.js';
 
 export interface ContextItem {
   path: string;
@@ -7,13 +8,18 @@ export interface ContextItem {
 }
 
 export class Scribe {
-  static generateScroll(intent: string, reflection: Reflection, items: ContextItem[]): string {
+  static generateScroll(intent: string, reflection: Reflection, items: ContextItem[], profile: SeekerProfileData | null): string {
     const timestamp = new Date().toISOString();
     
     let scroll = `# The Context Scroll\n`;
     scroll += `**Date:** ${timestamp}\n`;
     scroll += `**Intent:** "${intent}"\n`;
     scroll += `**Seeker State:** ${reflection.state}\n`;
+    
+    if (profile) {
+        scroll += `**Seeker History:** Sessions: ${profile.stats.sessions} | Weariness: ${profile.stats.wearinessCount}\n`;
+    }
+
     if (reflection.state !== 'Calm') {
       scroll += `**Gatekeeper Note:** ${reflection.message}\n`;
     }

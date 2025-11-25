@@ -1,0 +1,11 @@
+{
+  "name": "Seeker",
+  "intent": "",
+  "state": "Calm",
+  "lastInteraction": "2025-11-25T02:55:03.424Z",
+  "stats": {
+    "sessions": 1,
+    "wearinessCount": 0,
+    "franticCount": 0
+  }
+}

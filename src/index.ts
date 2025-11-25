@@ -5,6 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { Gatekeeper } from './core/gatekeeper.js';
 import { Shadow } from './io/shadow.js';
+import { SeekerProfile } from './io/profile.js';
 import { Scribe, type ContextItem } from './core/scribe.js';
 
 const program = new Command();
@@ -18,6 +19,7 @@ program.command('init')
   .description('Initialize the Covenant and the Shadow Library')
   .action(() => {
     console.log(chalk.blue('TheeSeeks: Initialization sequence started.'));
+    SeekerProfile.init();
     console.log(chalk.green('State your intent, Seeker.'));
   });
 
@@ -26,7 +28,23 @@ program.command('ask')
   .option('-f, --file <path>', 'Specific file to include context for')
   .description('Ask a question to the Advisor')
   .action(async (query, options) => {
+    // Load Profile
+    let profile = SeekerProfile.load();
+    if (!profile) {
+        SeekerProfile.init();
+        profile = SeekerProfile.load();
+    }
+
     const reflection = await Gatekeeper.analyze(query);
+
+    // Update Profile Stats
+    if (profile) {
+        profile.stats.sessions++;
+        if (reflection.state === 'Frantic') profile.stats.franticCount++;
+        if (reflection.state === 'Weary') profile.stats.wearinessCount++;
+        profile.state = reflection.state;
+        SeekerProfile.save(profile);
+    }
 
     if (reflection.state !== 'Calm') {
       console.log(chalk.yellow(`\n(The Gatekeeper steps forward)`));
@@ -60,7 +78,7 @@ program.command('ask')
     }
 
     // Scribe
-    const scroll = Scribe.generateScroll(query, reflection, items);
+    const scroll = Scribe.generateScroll(query, reflection, items, profile);
     
     // Output to file
     const outputDir = path.join(process.cwd(), '.theeseeks');
