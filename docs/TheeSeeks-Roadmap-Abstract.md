@@ -78,7 +78,17 @@ Code changes. If the Spirit (Companion) remains static while the Body (Raw Code)
     *   **The Ritual of Pruning:** A workflow to easily update Companions when the code shifts.
 *   **The Cultural Value:** **Truth.** We cannot view the code through a lens that is cracked or clouded by time, obscuring the Spirit with the Letter.
 
-## Phase 6: The Agency (The Hand)
+## Phase 6: The Librarian (External Knowledge)
+**The Concept:** Ingestion.
+We cannot rely on the AI's training data for external libraries. We need a local, versioned source of truth.
+
+*   **The Goal:** To ingest, version, and shadow external documentation.
+*   **The Architecture:**
+    *   **The Stacks:** A structured `raw/` (Letter) and `shadow/` (Spirit) storage for external docs.
+    *   **The Semantic Peek:** A process to chunk raw documents into logical sections and generate "Skeleton" summaries for the Shadow.
+*   **The Cultural Value:** **Wisdom.** We do not guess at the tools we use; we study them, preserve them, and keep them close.
+
+## Phase 7: The Agency (The Hand)
 **The Concept:** Action.
 This is the distant horizon. Once the system can See (Gatekeeper), Remember (Shadow), and Speak (Bridge), it may eventually be trusted to Act.
 

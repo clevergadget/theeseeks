@@ -1,0 +1,14 @@
+{
+  "name": "gemini-models",
+  "version": "v1.0.0",
+  "source": "https://ai.google.dev/gemini-api/docs/models/gemini",
+  "ingestedAt": "2025-11-25T17:05:29.877Z",
+  "hash": "785fe723c086da8e75df4902829be4fe0c3ea10a0ef4956e9d8cd5b0b3a397a9",
+  "files": [
+    {
+      "rawPath": ".culture\\external\\gemini-models\\v1.0.0\\raw\\index.html",
+      "shadowPath": ".culture\\external\\gemini-models\\v1.0.0\\shadow\\index.md",
+      "originalUrl": "https://ai.google.dev/gemini-api/docs/models/gemini"
+    }
+  ]
+}

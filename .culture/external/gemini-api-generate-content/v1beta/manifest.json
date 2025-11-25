@@ -1,0 +1,14 @@
+{
+  "name": "gemini-api-generate-content",
+  "version": "v1beta",
+  "source": "https://ai.google.dev/api/rest/v1beta/models/generateContent?hl=en",
+  "ingestedAt": "2025-11-25T17:16:17.898Z",
+  "hash": "08bc28d9bdd17b2c412987b0ad88d2423dcad44fc9e88f821ecc3c6519e5e518",
+  "files": [
+    {
+      "rawPath": ".culture\\external\\gemini-api-generate-content\\v1beta\\raw\\index.html",
+      "shadowPath": ".culture\\external\\gemini-api-generate-content\\v1beta\\shadow\\index.md",
+      "originalUrl": "https://ai.google.dev/api/rest/v1beta/models/generateContent?hl=en"
+    }
+  ]
+}

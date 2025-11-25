@@ -1,0 +1,2483 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html 
+      lang="sq-x-mtfrom-en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="157101835696-ooapojlodmuabs2do2vuhhnf90bccmoi.apps.googleusercontent.com"><meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award"><meta property="og:site_name" content="Google AI for Developers">
+    <meta property="og:type" content="website"><meta name="robots" content="noindex"><meta name="theme-color" content="#1967d2"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/googledevai/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Inter:400,500|Inter+Tight:300,500,600&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/css/app.css">
+      
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/css/dark-theme.css" disabled>
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/touchicon-180-new.png"><link rel="canonical" href="https://ai.google.dev/gemini-api/docs/models?hl=sq"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google AI for Developers" href="https://ai.google.dev/s/opensearch.xml?hl=sq">
+      <link rel="alternate" hreflang="en"
+          href="https://ai.google.dev/gemini-api/docs/models" /><link rel="alternate" hreflang="x-default" href="https://ai.google.dev/gemini-api/docs/models" /><link rel="alternate" hreflang="ar"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=vi" /><link rel="alternate" hreflang="sq"
+          href="https://ai.google.dev/gemini-api/docs/models?hl=sq" /><title>Modelet e Binjakëve &nbsp;|&nbsp; Gemini API &nbsp;|&nbsp; Google AI for Developers</title>
+
+<meta property="og:title" content="Modelet e Binjakëve &nbsp;|&nbsp; Gemini API &nbsp;|&nbsp; Google AI for Developers"><meta name="description" content="Mësoni rreth modeleve më të avancuara të AI të Google duke përfshirë Gemini 2.5 Pro, Mësoni rreth modeleve më të avancuara të AI të Google duke përfshirë Gemini 2.5 Pro">
+  <meta property="og:description" content="Mësoni rreth modeleve më të avancuara të AI të Google duke përfshirë Gemini 2.5 Pro, Mësoni rreth modeleve më të avancuara të AI të Google duke përfshirë Gemini 2.5 Pro"><meta property="og:url" content="https://ai.google.dev/gemini-api/docs/models?hl=sq"><meta property="og:image" content="https://ai.google.dev/static/site-assets/images/share-gemini-api-2.png?hl=sq">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="sq"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    
+    "headline": "Modelet e Binjakëve"
+  }
+</script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Gemini API",
+      "item": "https://ai.google.dev/gemini-api"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Modelet e Binjakëve",
+      "item": "https://ai.google.dev/gemini-api/docs/models"
+    }]
+  }
+  </script><link rel="alternate machine-translated-from" hreflang="en"
+        href="https://ai.google.dev/gemini-api/docs/models?hl=en">
+  
+
+  
+
+  
+
+  
+
+
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class="gemini-api"
+        template="page"
+        theme="googledevai-theme"
+        type="article"
+        
+        appearance
+        
+        layout="docs"
+        
+        
+        
+        
+        
+        display-toc
+        pending>
+  
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+  
+    <a href="#main-content" class="skip-link button">
+      
+      Kapërce te përmbajtja kryesore
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner" keep-tabs-visible>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Hap menynë">
+        </button>
+        
+<div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="geminiAPI" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <source srcset="https://ai.google.dev/_static/googledevai/images/gemini-api-logo-dark-theme.svg?hl=sq"
+            media="(prefers-color-scheme: dark)"
+            class="devsite-dark-theme">
+    
+    <img src="https://ai.google.dev/_static/googledevai/images/gemini-api-logo.svg?hl=sq" class="devsite-site-logo" alt="Gemini API">
+  </picture>
+  
+</a>
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    enable-search-summaries
+    project-name="Gemini API"
+    tenant-name="Google AI for Developers"
+    project-scope="/gemini-api"
+    url-scoped="https://ai.google.dev/s/results/gemini-api?hl=sq"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://ai.google.dev/s/results?hl=sq" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Hap kërkimin"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Kërko"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Kërko"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+              <svg class="devsite-search-ai-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6641_386)">
+                    <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14167 15.375 4.875 14.125C3.625 12.8583 3 11.3167 3 9.5C3 7.68333 3.625 6.15 4.875 4.9C6.14167 3.63333 7.68333 3 9.5 3C10.0167 3 10.5167 3.05833 11 3.175C11.4833 3.275 11.9417 3.43333 12.375 3.65L10.825 5.2C10.6083 5.13333 10.3917 5.08333 10.175 5.05C9.95833 5.01667 9.73333 5 9.5 5C8.25 5 7.18333 5.44167 6.3 6.325C5.43333 7.19167 5 8.25 5 9.5C5 10.75 5.43333 11.8167 6.3 12.7C7.18333 13.5667 8.25 14 9.5 14C10.6667 14 11.6667 13.625 12.5 12.875C13.35 12.1083 13.8417 11.15 13.975 10H15.975C15.925 10.6333 15.7833 11.2333 15.55 11.8C15.3333 12.3667 15.05 12.8667 14.7 13.3L21 19.6L19.6 21ZM17.5 12C17.5 10.4667 16.9667 9.16667 15.9 8.1C14.8333 7.03333 13.5333 6.5 12 6.5C13.5333 6.5 14.8333 5.96667 15.9 4.9C16.9667 3.83333 17.5 2.53333 17.5 0.999999C17.5 2.53333 18.0333 3.83333 19.1 4.9C20.1667 5.96667 21.4667 6.5 23 6.5C21.4667 6.5 20.1667 7.03333 19.1 8.1C18.0333 9.16667 17.5 10.4667 17.5 12Z" fill="#5F6368"/>
+                  </g>
+                <defs>
+                <clipPath id="clip0_6641_386">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Mbyll kërkimin"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          <devsite-appearance-selector></devsite-appearance-selector>
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="sq"
+        >Shqip</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+            <a class="devsite-header-link devsite-top-button button gc-analytics-event "
+    href="https://aistudio.google.com/apikey?hl=sq"
+    data-category="Site-Wide Custom Events"
+    data-label="Site header link: Merr çelësin API"
+    
+      
+        target="_blank"
+      
+    >
+  Merr çelësin API
+</a>
+          
+            <a class="devsite-header-link devsite-top-button button gc-analytics-event "
+    href="https://github.com/google-gemini/cookbook"
+    data-category="Site-Wide Custom Events"
+    data-label="Site header link: Libër gatimi"
+    
+      
+        target="_blank"
+      
+    >
+  Libër gatimi
+</a>
+          
+            <a class="devsite-header-link devsite-top-button button gc-analytics-event "
+    href="https://discuss.ai.google.dev/c/gemini-api/?hl=sq"
+    data-category="Site-Wide Custom Events"
+    data-label="Site header link: Komuniteti"
+    
+      
+        target="_blank"
+      
+    >
+  Komuniteti
+</a>
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Identifikohu</span>
+            
+          </devsite-user>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Skedat më poshtë">
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://ai.google.dev/gemini-api/docs?hl=sq"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://ai.google.dev/gemini-api/docs?hl=sq"
+    
+       track-type="nav"
+       track-metadata-position="nav - dokumentet e api-t të gemini"
+       track-metadata-module="primary nav"
+       aria-label="Dokumentet e API-t të Gemini, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Dokumentet e API-t të Gemini"
+         
+           track-name="dokumentet e api-t të gemini"
+         
+       >
+    Dokumentet e API-t të Gemini
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://ai.google.dev/api?hl=sq"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://ai.google.dev/api?hl=sq"
+    
+       track-type="nav"
+       track-metadata-position="nav - referenca api, referencë api"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Referenca API, referencë API"
+         
+           track-name="referenca api, referencë api"
+         
+       >
+    Referenca API, referencë API
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars >
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     hidden>
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filtri"
+         
+         aria-label="Shkruaj për të filtruar"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Pastro filtrin"
+        aria-label="Pastro filtrin"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Menyja anësore">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Mbyll navigimin">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="geminiAPI" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <source srcset="https://ai.google.dev/_static/googledevai/images/gemini-api-logo-dark-theme.svg?hl=sq"
+            media="(prefers-color-scheme: dark)"
+            class="devsite-dark-theme">
+    
+    <img src="https://ai.google.dev/_static/googledevai/images/gemini-api-logo.svg?hl=sq" class="devsite-site-logo" alt="Gemini API">
+  </picture>
+  
+</a>
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/gemini-api/docs"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Gemini API"
+      
+        track-name="gemini api"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Gemini API"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Gemini API
+   </span>
+    
+  
+  </a>
+  
+
+  
+              
+                <ul class="devsite-nav-responsive-tabs">
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="/gemini-api/docs"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Dokumentet e API-t të Gemini"
+      
+        track-name="dokumentet e api-t të gemini"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Dokumentet e API-t të Gemini"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip menu="_book">
+      Dokumentet e API-t të Gemini
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="/api"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Referenca API, referencë API"
+      
+        track-name="referenca api, referencë api"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Referenca API, referencë API"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Referenca API, referencë API
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+          
+    
+    
+<li class="devsite-nav-item">
+
+  
+  <a href="https://aistudio.google.com/apikey"
+    
+       class="devsite-nav-title gc-analytics-event "
+    
+
+    
+      
+        target="_blank"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Merr çelësin API"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Merr çelësin API
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+  
+    
+    
+<li class="devsite-nav-item">
+
+  
+  <a href="https://github.com/google-gemini/cookbook"
+    
+       class="devsite-nav-title gc-analytics-event "
+    
+
+    
+      
+        target="_blank"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Libër gatimi"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Libër gatimi
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+  
+    
+    
+<li class="devsite-nav-item">
+
+  
+  <a href="https://discuss.ai.google.dev/c/gemini-api/"
+    
+       class="devsite-nav-title gc-analytics-event "
+    
+
+    
+      
+        target="_blank"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Komuniteti"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Komuniteti
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+  
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom">
+        
+          
+          <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Filloni</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs"
+      ><span class="devsite-nav-text" tooltip>Vështrim i përgjithshëm</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/quickstart"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/quickstart"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/quickstart"
+      ><span class="devsite-nav-text" tooltip>Fillimi i shpejtë</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/api-key"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/api-key"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/api-key"
+      ><span class="devsite-nav-text" tooltip>Çelësat API</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/aistudio-build-mode"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/aistudio-build-mode"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/aistudio-build-mode"
+      ><span class="devsite-nav-text" tooltip>Kodi i Vibe në modalitetin e ndërtimit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/libraries"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/libraries"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/libraries"
+      ><span class="devsite-nav-text" tooltip>Bibliotekat</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/openai"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/openai"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/openai"
+      ><span class="devsite-nav-text" tooltip>Përputhshmëria me OpenAI</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Modelet</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/models"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/models"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/models"
+      ><span class="devsite-nav-text" tooltip>Gemini</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/gemini-3"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/gemini-3"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/gemini-3"
+      ><span class="devsite-nav-text" tooltip>Binjakët 3</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/imagen"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/imagen"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/imagen"
+      ><span class="devsite-nav-text" tooltip>Imazhi (gjenerimi i imazhit)</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/video"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/video"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/video"
+      ><span class="devsite-nav-text" tooltip>Veo (gjenerimi i videove)</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/music-generation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/music-generation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/music-generation"
+      ><span class="devsite-nav-text" tooltip>Lyria (gjenerata muzikore)</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/embeddings"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/embeddings"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/embeddings"
+      ><span class="devsite-nav-text" tooltip>Embeddings</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/robotics-overview"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/robotics-overview"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/robotics-overview"
+      ><span class="devsite-nav-text" tooltip>Robotika</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/pricing"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/pricing"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/pricing"
+      ><span class="devsite-nav-text" tooltip>Çmimet</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/rate-limits"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/rate-limits"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/rate-limits"
+      ><span class="devsite-nav-text" tooltip>Kufijtë e tarifave</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Aftësitë kryesore</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/text-generation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/text-generation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/text-generation"
+      ><span class="devsite-nav-text" tooltip>Teksti</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Imazhi</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/image-generation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/image-generation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/image-generation"
+      ><span class="devsite-nav-text" tooltip>Gjenerimi i imazhit 🍌</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/image-understanding"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/image-understanding"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/image-understanding"
+      ><span class="devsite-nav-text" tooltip>Kuptimi i imazhit</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/video-understanding"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/video-understanding"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/video-understanding"
+      ><span class="devsite-nav-text" tooltip>Video</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/document-processing"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/document-processing"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/document-processing"
+      ><span class="devsite-nav-text" tooltip>Dokumente</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Të folurit dhe audioja</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/speech-generation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/speech-generation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/speech-generation"
+      ><span class="devsite-nav-text" tooltip>Gjenerimi i të folurit</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/audio"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/audio"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/audio"
+      ><span class="devsite-nav-text" tooltip>Kuptimi audio</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Të menduarit dhe nënshkrimet e mendimit</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/thinking"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/thinking"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/thinking"
+      ><span class="devsite-nav-text" tooltip>duke menduar</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/thought-signatures"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/thought-signatures"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/thought-signatures"
+      ><span class="devsite-nav-text" tooltip>Nënshkrimet e mendimit, nënshkrimet e mendimit</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/structured-output"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/structured-output"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/structured-output"
+      ><span class="devsite-nav-text" tooltip>Rezultatet e strukturuara</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/function-calling"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/function-calling"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/function-calling"
+      ><span class="devsite-nav-text" tooltip>Thirrja e funksionit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/long-context"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/long-context"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/long-context"
+      ><span class="devsite-nav-text" tooltip>Konteksti i gjatë</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Mjetet</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/tools"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/tools"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/tools"
+      ><span class="devsite-nav-text" tooltip>Vështrim i përgjithshëm</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/google-search"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/google-search"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/google-search"
+      ><span class="devsite-nav-text" tooltip>Google Search</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/maps-grounding"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/maps-grounding"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/maps-grounding"
+      ><span class="devsite-nav-text" tooltip>Google Maps</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/code-execution"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/code-execution"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/code-execution"
+      ><span class="devsite-nav-text" tooltip>Ekzekutimi i kodit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/url-context"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/url-context"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/url-context"
+      ><span class="devsite-nav-text" tooltip>Konteksti i URL-së</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/computer-use"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/computer-use"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/computer-use"
+      ><span class="devsite-nav-text" tooltip>Përdorimi i kompjuterit</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/file-search"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/file-search"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/file-search"
+      ><span class="devsite-nav-text" tooltip>Kërkimi i skedarëve</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>API e drejtpërdrejtë</span>
+      </div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-preview"><a href="/gemini-api/docs/live"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/live"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/live"
+      ><span class="devsite-nav-text" tooltip>Filloni</span><span class="devsite-nav-icon material-icons"
+        data-icon="preview"
+        data-title="Version paraprak"
+        aria-hidden="true"></span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/live-guide"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/live-guide"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/live-guide"
+      ><span class="devsite-nav-text" tooltip>aftësitë</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/live-tools"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/live-tools"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/live-tools"
+      ><span class="devsite-nav-text" tooltip>Përdorimi i mjetit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/live-session"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/live-session"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/live-session"
+      ><span class="devsite-nav-text" tooltip>Menaxhimi i sesionit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/ephemeral-tokens"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/ephemeral-tokens"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/ephemeral-tokens"
+      ><span class="devsite-nav-text" tooltip>Shenjat kalimtare</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Udhëzues</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/batch-api"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/batch-api"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/batch-api"
+      ><span class="devsite-nav-text" tooltip>Batch API</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/files"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/files"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/files"
+      ><span class="devsite-nav-text" tooltip>Files API, Files API, Files API, Files API</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/caching"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/caching"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/caching"
+      ><span class="devsite-nav-text" tooltip>Memoria e kontekstit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/media-resolution"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/media-resolution"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/media-resolution"
+      ><span class="devsite-nav-text" tooltip>Rezolucioni i medias</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/tokens"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/tokens"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/tokens"
+      ><span class="devsite-nav-text" tooltip>Numërimi i shenjave</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/prompting-strategies"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/prompting-strategies"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/prompting-strategies"
+      ><span class="devsite-nav-text" tooltip>Inxhinieri e shpejtë</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Logjet dhe grupet e të dhënave</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/logs-datasets"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/logs-datasets"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/logs-datasets"
+      ><span class="devsite-nav-text" tooltip>Filloni me regjistrat</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/logs-policy"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/logs-policy"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/logs-policy"
+      ><span class="devsite-nav-text" tooltip>Regjistrimi dhe ndarja e të dhënave</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Siguria</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/safety-settings"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/safety-settings"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/safety-settings"
+      ><span class="devsite-nav-text" tooltip>Cilësimet e sigurisë</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/safety-guidance"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/safety-guidance"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/safety-guidance"
+      ><span class="devsite-nav-text" tooltip>Udhëzime sigurie</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Kornizat me burim të hapur</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/langgraph-example"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/langgraph-example"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/langgraph-example"
+      ><span class="devsite-nav-text" tooltip>LangChain &amp; LangGraph</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/crewai-example"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/crewai-example"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/crewai-example"
+      ><span class="devsite-nav-text" tooltip>CrewAI</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/llama-index"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/llama-index"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/llama-index"
+      ><span class="devsite-nav-text" tooltip>LlamaIndeksi</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/vercel-ai-sdk-example"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/vercel-ai-sdk-example"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/vercel-ai-sdk-example"
+      ><span class="devsite-nav-text" tooltip>Vercel AI SDK</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Burimet, Burimet</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/migrate"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/migrate"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/migrate"
+      ><span class="devsite-nav-text" tooltip>Migroni në Gen AI SDK, Migroni në Gen AI SDK</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/changelog"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/changelog"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/changelog"
+      ><span class="devsite-nav-text" tooltip>Shënimet e publikimit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/deprecations"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/deprecations"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/deprecations"
+      ><span class="devsite-nav-text" tooltip>Kundërshtimet</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/troubleshooting"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/troubleshooting"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/troubleshooting"
+      ><span class="devsite-nav-text" tooltip>Zgjidhja e problemeve të API</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/billing"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/billing"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/billing"
+      ><span class="devsite-nav-text" tooltip>Informacioni i faturimit</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google AI Studio</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/ai-studio-quickstart"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/ai-studio-quickstart"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/ai-studio-quickstart"
+      ><span class="devsite-nav-text" tooltip>Nisja e shpejtë e Google AI Studio</span></a></li><li class="devsite-nav-item
+           devsite-nav-experimental"><a href="/gemini-api/docs/learnlm"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/learnlm"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/learnlm"
+      ><span class="devsite-nav-text" tooltip>LearnLM</span><span class="devsite-nav-icon material-icons"
+        data-icon="experimental"
+        data-title="Eksperimentale!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/troubleshoot-ai-studio"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/troubleshoot-ai-studio"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/troubleshoot-ai-studio"
+      ><span class="devsite-nav-text" tooltip>Zgjidhja e problemeve të AI Studio</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/workspace"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/workspace"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/workspace"
+      ><span class="devsite-nav-text" tooltip>Google Workspace</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Platforma e resë kompjuterike të Google</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gemini-api/docs/migrate-to-cloud"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/migrate-to-cloud"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/migrate-to-cloud"
+      ><span class="devsite-nav-text" tooltip>VertexAI Gemini API</span></a></li><li class="devsite-nav-item"><a href="/gemini-api/docs/oauth"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/oauth"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/oauth"
+      ><span class="devsite-nav-text" tooltip>Autentifikimi i OAut</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>politikat</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/terms"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/terms"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/terms"
+      ><span class="devsite-nav-text" tooltip>Kushtet e shërbimit</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/available-regions"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/available-regions"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/available-regions"
+      ><span class="devsite-nav-text" tooltip>Rajonet e disponueshme</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/gemini-api/docs/usage-policies"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /gemini-api/docs/usage-policies"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/gemini-api/docs/usage-policies"
+      ><span class="devsite-nav-text" tooltip>Politika shtesë të përdorimit</span></a></li>
+          </ul>
+        
+        
+          
+    
+  
+        
+        
+          
+    
+  
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              has-book-nav
+              has-sidebar
+            >
+          <div class="devsite-sidebar">
+            <div class="devsite-sidebar-content">
+                
+                <devsite-toc class="devsite-nav"
+                            role="navigation"
+                            aria-label="Në këtë faqe"
+                            depth="2"
+                            scrollbars
+                  ></devsite-toc>
+                <devsite-recommendations-sidebar class="nocontent devsite-nav">
+                </devsite-recommendations-sidebar>
+            </div>
+          </div>
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article"><style>
+      /* Styles inlined from /site-assets/css/models.css */
+:root {
+  --gemini-api-table-font-color: #3c4043;
+  --gemini-api-model-font: 'Google Sans Text', Roboto, sans-serif;
+  --gemini-api-card-width: 17rem;
+  --gemini-api-elevation-1dp: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                              0 2px 1px -1px rgba(0, 0, 0, 0.12),
+                              0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --gemini-api-elevation-3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                              0 3px 3px -2px rgba(0, 0, 0, 0.12),
+                              0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+body[theme="googledevai-theme"] {
+  --googledevai-button-gradient: var(--googledevai-button-gradient-light);
+}
+
+body[theme="googledevai-theme"].color-scheme--dark {
+  --googledevai-button-gradient: var(--googledevai-button-gradient-dark);
+}
+
+.google-symbols {
+  background: -webkit-linear-gradient(45deg, var(--googledevai-blue), var(--googledevai-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  vertical-align: bottom;
+}
+
+
+/* Cards */
+@media only screen and (min-width: 625px) {
+  .gemini-api-recommended {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Three equal-width columns */
+    grid-column-gap: 3rem;  /* Keep the gap between columns */
+  }
+}
+
+.gemini-api-recommended {
+  width: 100%;  /* Take full width of parent */
+  margin: 0 auto;
+}
+
+.gemini-api-card {
+  background: var(--devsite-background-1);
+  border: 1px solid var(--googledevai-border-color);
+  border-radius: 9px;
+  box-shadow: var(--gemini-api-elevation-1dp);
+  height: 23rem;
+  margin: 1rem .5rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+  width: var(--gemini-api-card-width);
+}
+
+.color-scheme--dark .gemini-api-card {
+  background: #131314;
+  border-color: #444746;
+}
+
+.gemini-api-card:hover {
+  box-shadow: var(--gemini-api-elevation-3dp);
+}
+
+.gemini-api-card a:empty {
+  display: block;
+  position: relative;
+  height: 23rem;
+  width: var(--gemini-api-card-width);
+  top: -22.8rem;
+  left: -1rem;
+}
+
+.gemini-api-card a:empty:focus {
+  border: 2px solid var(--devsite-primary-color);
+  border-radius: 9px;
+}
+
+.gemini-api-card-title {
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 1.5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.3rem;
+}
+
+.gemini-api-card-description {
+  font-size: .9rem;
+  height: 7.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.gemini-api-card-bulletpoints {
+  color: #757575;
+  font-size: .8rem;
+  height: 8.2rem;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.color-scheme--dark .gemini-api-card-bulletpoints {
+  color: var(--devsite-primary-text-color);
+}
+
+.gemini-api-card-description,
+.gemini-api-card-bulletpoints {
+  font-family: var(--gemini-api-model-font);
+}
+
+.gemini-api-card-bulletpoints li {
+  line-height: 1rem;
+  margin: .3rem 0;
+}
+
+/* Tables */
+.gemini-api-model-table,
+.gemini-api-model-table th {
+  color: var(--gemini-api-table-font-color);
+  font: .95rem var(--gemini-api-model-font);
+}
+
+.color-scheme--dark .gemini-api-model-table,
+.color-scheme--dark .gemini-api-model-table th {
+  color: var(--devsite-primary-text-color);
+}
+
+.gemini-api-model-table th {
+  font-weight: 500;
+}
+
+.gemini-api-model-table td:first-child {
+  max-width: 0;
+}
+
+.gemini-api-model-table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem .5rem;
+}
+
+.gemini-api-model-table section {
+  display: inline-grid;
+}
+
+.gemini-api-model-table p {
+  margin: 0 0 .5rem;
+}
+
+.gemini-api-model-table li {
+  margin: 0;
+}
+
+.gemini-api-model-table ul {
+  margin-top: .5rem;
+}
+
+.gemini-api-model-table .google-symbols {
+  margin-right: .7rem;
+  vertical-align: middle;
+}
+
+.gemini-api-supported,
+.gemini-api-not-supported,
+.gemini-api-experimental {
+  border-radius: 8px;
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: .3rem 0.5em;
+}
+
+.gemini-api-supported {
+  background: #e6f4ea; /* GM3 Green 50 */
+  color: #177d37; /* GM3 Green 700 */
+}
+
+.gemini-api-not-supported {
+  background: #fce8e6; /* GM3 Red 50 */
+  color: #c5221f; /* GM3 Red 700 */
+}
+
+.gemini-api-experimental {
+  background: #e8def8;
+  color: #4a4458;
+}
+
+.color-scheme--dark .gemini-api-supported {
+  background: #177d37; /* GM3 Green 700 */
+  color: #e6f4ea; /* GM3 Green 50 */
+}
+
+.color-scheme--dark .gemini-api-not-supported {
+  background: #c5221f; /* GM3 Red 700 */
+  color: #fce8e6; /* GM3 Red 50 */
+}
+
+/* Buttons */
+.gemini-api-model-button {
+  background: var(--googledevai-button-gradient);
+  background-size: 300% 300%;
+  border-radius: 20rem;
+  color: #001d35;
+  font-family: var(--gemini-api-model-font);
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .6rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: filter .2s ease-in-out,
+              box-shadow .2s ease-in-out;
+}
+
+.gemini-api-model-button:hover{
+  animation: gradient 5s ease infinite;
+  filter: brightness(.98);
+  box-shadow: var(--gemini-api-elevation-1dp);
+}
+
+.gemini-api-model-button:focus {
+  filter: brightness(.95);
+  outline: #00639b solid 3px;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.gemini-api-model-button::before {
+  content: 'spark';
+  font-family: 'Google Symbols';
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.model-card {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.color-scheme--dark .model-card {
+  background-color: #3c4043;
+}
+
+.model-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    padding: 2.5rem;
+    flex: 1;
+}
+
+.sub-heading-model {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.5rem 0;
+}
+
+.color-scheme--dark .sub-heading-model {
+  color: var(--devsite-primary-text-color);
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #3c4043;
+    margin: 0 0 1.5rem 0;
+}
+
+.color-scheme--dark .description {
+  color: var(--devsite-primary-text-color);
+}
+
+.card-content a:not(.gemini-api-model-button) {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .model-card {
+        flex-direction: column;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .card-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+      </style>
+  
+  
+  
+    <div class="devsite-banner devsite-banner-announcement nocontent"
+      
+        
+    background="google-blue"
+  
+      >
+      <div class="devsite-banner-message">
+        <div class="devsite-banner-message-text">
+          Gemini 3 është këtu. Lexoni <a href="https://ai.google.dev/gemini-api/docs/gemini-3?hl=sq" style="color: black;">udhëzuesin e zhvilluesit</a> për të filluar me modelin tonë më të përparuar deri më tani.
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="devsite-banner devsite-banner-translated nocontent">
+      <div class="devsite-banner-message">
+        <div class="devsite-banner-message-text">
+          <img src="https://ai.google.dev/_static/images/translated.svg?hl=sq"
+               class="devsite-banner-translated-image invert"
+               alt="">
+          <span class="devsite-banner-translated-text">
+            
+            Kjo faqe është përkthyer nga <a href="//cloud.google.com/translate/?hl=sq">Cloud Translation API</a>.
+          </span>
+        </div>
+        <devsite-switch-to-english-button></devsite-switch-to-english-button>
+      </div>
+    </div>
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Shtegu i navigimit">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://ai.google.dev/?hl=sq"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Faqja kryesore
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://ai.google.dev/gemini-api?hl=sq"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail="Gemini API"
+      
+    >
+    
+        Gemini API
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://ai.google.dev/gemini-api/docs?hl=sq"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Dokumentet e API-t të Gemini
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+      
+    <devsite-thumb-rating position="header">
+    </devsite-thumb-rating>
+  
+    
+  </div>
+  
+    <devsite-feedback
+  position="header"
+  project-name="Gemini API"
+  product-id="5292923"
+  bucket="documentation"
+  context=""
+  version="t-devsite-webserver-20251113-r00-rc00.473353542654510286"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+  class="nocontent"
+  
+  
+  
+    project-icon="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/touchicon-180-new.png"
+  
+  
+  
+  >
+
+  <button>
+  
+    
+    Dërgo komente
+  
+  </button>
+</devsite-feedback>
+  
+    <h1 class="devsite-page-title" tabindex="-1">
+      Modelet e Binjakëve<devsite-actions hidden data-nosnippet>
+    <devsite-llm-tools></devsite-llm-tools></devsite-actions>
+  
+      
+    </h1>
+  <div class="devsite-page-title-meta"><devsite-view-release-notes></devsite-view-release-notes></div>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    >
+  </devsite-toc>
+  
+    
+  <div class="devsite-article-body clearfix
+  ">
+
+  
+    
+    
+<p></p><p></p><div class="model-card"><div class="card-content"><p class="sub-heading-model">MODELI YNË MË INTELIGJENT</p><h2 id="gemini-3-pro" data-text=" Gemini 3 Pro" tabindex="-1"> Gemini 3 Pro</h2><p class="description"> Modeli më i mirë në botë për të kuptuarit multimodal, dhe modeli ynë më i fuqishëm agjentik dhe i kodimit të vibrave deri më tani, duke ofruar pamje më të pasura dhe ndërveprim më të thellë, të gjitha të ndërtuara mbi një themel të arsyetimit të teknologjisë së fundit. </p><section><devsite-expandable id="gemini-3-pro"><h3 class="showalways hide-from-toc" id="gemini-3-pro" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> <a href="https://aistudio.google.com?model=gemini-3-pro-preview&hl=sq"class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details" data-text=" Detajet e modelit " tabindex="-1"> Detajet e modelit </h4><devsite-selector><section><h3 id="gemini-3-pro-preview" data-text=" Pamje paraprake e Gemini 3 Pro" tabindex="-1"> Pamje paraprake e Gemini 3 Pro</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-3-pro-preview</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst, Imazh, Video, Audio dhe PDF</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> <code translate="no" dir="ltr">Preview: gemini-3-pro-preview</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Nëntor 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 id="gemini-3-pro-image-preview" data-text=" Pamje paraprake e imazhit të Gemini 3 Pro" tabindex="-1"> Pamje paraprake e imazhit të Gemini 3 Pro</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-3-pro-image-preview</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Imazh dhe Tekst</p></section><section><p> <b>Prodhimi</b></p><p> Imazh dhe Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 65,536</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 32,768</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> <code translate="no" dir="ltr">Preview: gemini-3-pro-image-preview</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Nëntor 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section></devsite-selector></devsite-expandable></section></div></div><div class="model-card"><div class="card-content"><p class="sub-heading-model"> MODELI YNË I MENDIMIT TË AVANCUAR</p><h2 id="gemini-2.5-pro" data-text=" Gemini 2.5 Pro" tabindex="-1"> Gemini 2.5 Pro</h2><p class="description"> Modeli ynë i të menduarit i teknologjisë së fundit, i aftë të arsyetojë mbi probleme komplekse në kod, matematikë dhe STEM, si dhe të analizojë grupe të mëdha të dhënash, baza kodesh dhe dokumente duke përdorur kontekst të gjatë. </p><section><devsite-expandable id="gemini-2.5-pro"><h3 class="showalways hide-from-toc" id="gemini-2.5-pro" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> <a href="https://aistudio.google.com?model=gemini-2.5-pro&hl=sq"class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details_1" data-text=" Detajet e modelit " tabindex="-1"> Detajet e modelit </h4><devsite-selector><section><h3 id="gemini-2.5-pro_1" data-text="Gemini 2.5 Pro" tabindex="-1">Gemini 2.5 Pro</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-pro</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, imazhe, video, tekst dhe PDF</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> <code translate="no" dir="ltr">Stable: gemini-2.5-pro</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Qershor 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 id="gemini-2.5-pro-tts" data-text=" Gemini 2.5 Pro TTS" tabindex="-1"> Gemini 2.5 Pro TTS</h3><table class="gemini-api-model-table"><tr><th scope="col"> Pronë</th><th scope="col"> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-pro-preview-tts</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst</p></section><section><p> <b>Prodhimi</b></p><p> Audio</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 8,192</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 16,384</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> <code translate="no" dir="ltr">gemini-2.5-pro-preview-tts</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Maj 2025 </td></tr></table></section></devsite-selector></devsite-expandable></section></div></div><div class="model-card"><div class="card-content"><p class="sub-heading-model"> I SHPEJTË DHE INTELIGJENT</p><h2 id="gemini-2.5-flash" data-text=" Binjakët 2.5 Flash" tabindex="-1"> Binjakët 2.5 Flash</h2><p class="description"> Modeli ynë më i mirë për sa i përket raportit çmim-performancë, duke ofruar aftësi të gjithanshme. Flash 2.5 është më i miri për përpunim në shkallë të gjerë, detyra me vonesë të ulët, me vëllim të lartë që kërkojnë të menduarit dhe raste përdorimi agjentësh. </p><section><devsite-expandable id="gemini-2.5-flash"><h3 class="showalways hide-from-toc" id="gemini-2.5-flash" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> <a href="https://aistudio.google.com?model=gemini-2.5-flash&hl=sq" class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details_2" data-text=" Detajet e modelit " tabindex="-1"> Detajet e modelit </h4><devsite-selector><section><h3 id="gemini-2.5-flash_1" data-text=" Binjakët 2.5 Flash" tabindex="-1"> Binjakët 2.5 Flash</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst, imazhe, video, audio</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> I qëndrueshëm: <code translate="no" dir="ltr">gemini-2.5-flash</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Qershor 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 id="gemini-2.5-flash-preview" data-text="Pamje paraprake e flashit Gemini 2.5" tabindex="-1">Pamje paraprake e flashit Gemini 2.5</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-preview-09-2025</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst, imazhe, video, audio</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Parapamje: <code translate="no" dir="ltr">gemini-2.5-flash-preview-09-2025</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Shtator 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 id="gemini-2.5-flash-image" data-text=" Imazh Flash i Gemini 2.5" tabindex="-1"> Imazh Flash i Gemini 2.5</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-image</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Imazhe dhe tekst</p></section><section><p> <b>Prodhimi</b></p><p> Imazhe dhe tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 65,536</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 32,768</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> I qëndrueshëm: <code translate="no" dir="ltr">gemini-2.5-flash-image</code></li><li> Parapamje: <code translate="no" dir="ltr">gemini-2.5-flash-image-preview</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Tetor 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Qershor 2025 </td></tr></table></section><section><h3 id="gemini-2.5-flash-live" data-text=" Gemini 2.5 Flash Live" tabindex="-1"> Gemini 2.5 Flash Live</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-native-audio-preview-09-2025</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, video, tekst</p></section><section><p> <b>Prodhimi</b></p><p> Audio dhe tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 131,072</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 8,192</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Parapamje: <code translate="no" dir="ltr">gemini-2.5-flash-native-audio-preview-09-2025</code></li><li> Parapamje: parapamje <code translate="no" dir="ltr">gemini-live-2.5-flash-preview</code></li><p> <span class="gemini-api-not-supported">gemini-live-2.5-flash-preview do të hiqet nga përdorimi më 9 dhjetor 2025.</span></p></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Shtator 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 id="gemini-2.5-flash-tts" data-text=" TTS me Flash Gemini 2.5" tabindex="-1"> TTS me Flash Gemini 2.5</h3><table class="gemini-api-model-table"><tr><th scope="col"> Pronë</th><th scope="col"> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-preview-tts</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst</p></section><section><p> <b>Prodhimi</b></p><p> Audio</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 8,192</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 16,384</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> <code translate="no" dir="ltr">gemini-2.5-flash-preview-tts</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Maj 2025 </td></tr></table></section></devsite-selector></devsite-expandable></section></div></div><div class="model-card"><div class="card-content"><p class="sub-heading-model"> ULTRA I SHPEJTË</p><h2 id="gemini-2.5-flash-lite" data-text=" Gemini 2.5 Flash-Lite" tabindex="-1"> Gemini 2.5 Flash-Lite</h2><p class="description"> Modeli ynë më i shpejtë i blicit është optimizuar për efikasitet në kosto dhe rendiment të lartë. </p><section><devsite-expandable id="gemini-2.5-flash-lite"><h3 class="showalways hide-from-toc" id="gemini-2.5-flash-lite" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> <a href="https://aistudio.google.com?model=gemini-2.5-flash-lite&hl=sq" class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details_3" data-text=" Detajet e modelit " tabindex="-1"> Detajet e modelit </h4><devsite-selector><section><h3 id="gemini-2.5-flash-lite_1" data-text=" Gemini 2.5 Flash-Lite" tabindex="-1"> Gemini 2.5 Flash-Lite</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-lite</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst, imazh, video, audio, PDF</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> I qëndrueshëm: <code translate="no" dir="ltr">gemini-2.5-flash-lite</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Korrik 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section><section><h3 class="two-line-tab" id="gemini-2.5-flash-lite-preview" data-text=" Pamje paraprake e Gemini 2.5 Flash-Lite" tabindex="-1"> Pamje paraprake e Gemini 2.5 Flash-Lite</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.5-flash-lite-preview-09-2025</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Tekst, imazh, video, audio, PDF</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 65,536</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Parapamje: <code translate="no" dir="ltr">gemini-2.5-flash-lite-preview-09-2025</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Shtator 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Janar 2025 </td></tr></table></section></devsite-selector></devsite-expandable></section></div></div><p><br></p><h2 id="previous_gemini_models" class="hide-from-toc" data-text=" Modelet e mëparshme Gemini" tabindex="-1"> Modelet e mëparshme Gemini</h2><div class="model-card"><div class="card-content"><p class="sub-heading-model"> MODELI YNË I GJENERATAVE TË DYTA TË KALIVE TË PUNËS</p><h2 id="gemini-2.0-flash" data-text=" Binjakët 2.0 Flash" tabindex="-1"> Binjakët 2.0 Flash</h2><p class="description"> Modeli ynë i fuqishëm i gjeneratës së dytë, me një dritare konteksti prej 1 milion tokenësh. </p><section><devsite-expandable id="gemini-2.0-flash"><h3 class="showalways hide-from-toc" id="gemini-2.0-flash" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> Gemini 2.0 Flash ofron veçori të gjeneratës së ardhshme dhe aftësi të përmirësuara, duke përfshirë shpejtësi superiore, përdorim të mjeteve vendase dhe një dritare konteksti prej 1M tokenësh.</p><p> <a href="https://aistudio.google.com?model=gemini-2.0-flash&hl=sq" class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details_4" data-text=" Detajet e modelit " tabindex="-1"> Detajet e modelit </h4><devsite-selector><section><h3 id="gemini-2.0-flash_1" data-text=" Binjakët 2.0 Flash" tabindex="-1"> Binjakët 2.0 Flash</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.0-flash</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td classx="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, imazhe, video dhe tekst</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 8,192</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-experimental">Eksperimentale</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Më i fundit: <code translate="no" dir="ltr">gemini-2.0-flash</code></li><li> I qëndrueshëm: <code translate="no" dir="ltr">gemini-2.0-flash-001</code></li><li> Eksperimentale: <code translate="no" dir="ltr">gemini-2.0-flash-exp</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Shkurt 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Gusht 2024 </td></tr></table></section><section><h3 id="gemini-2.0-flash-image" data-text=" Imazh Flash i Gemini 2.0" tabindex="-1"> Imazh Flash i Gemini 2.0</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.0-flash-preview-image-generation</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, imazhe, video dhe tekst</p></section><section><p> <b>Prodhimi</b></p><p> Tekst dhe imazhe</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 32,768</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 8,192</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Parapamje: <code translate="no" dir="ltr">gemini-2.0-flash-preview-image-generation</code></li><p> <span class="gemini-api-not-supported">gemini-2.0-flash-preview-image-generation aktualisht nuk mbështetet në një numër vendesh në Evropë, Lindjen e Mesme dhe Afrikë.</span></p></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Maj 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Gusht 2024 </td></tr></table></section><section><h3 id="gemini-2.0-flash-live" data-text=" Gemini 2.0 Flash Live" tabindex="-1"> Gemini 2.0 Flash Live</h3><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.0-flash-live-001</code><p> <span class="gemini-api-not-supported">gemini-2.0-flash-live-001 do të hiqet nga përdorimi më 9 dhjetor 2025</span></p></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, video dhe tekst</p></section><section><p> <b>Prodhimi</b></p><p> Tekst dhe audio</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 8,192</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Parapamje: <code translate="no" dir="ltr">gemini-2.0-flash-live-001</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Prill 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Gusht 2024 </td></tr></table></section></devsite-selector></devsite-expandable></section></div></div><div class="model-card"><div class="card-content"><p class="sub-heading-model"> MODELI YNË I SHPEJTË I GJENERATAVE TË DYTA</p><h2 id="gemini-2.0-flash-lite" data-text=" Gemini 2.0 Flash-Lite" tabindex="-1"> Gemini 2.0 Flash-Lite</h2><p class="description"> Modeli ynë i vogël pune i gjeneratës së dytë, me një dritare konteksti prej 1 milion tokenësh. </p><section><devsite-expandable id="gemini-2.0-flash-lite"><h3 class="showalways hide-from-toc" id="gemini-2.0-flash-lite" data-text=" Zgjero për të mësuar më shumë" tabindex="-1"> Zgjero për të mësuar më shumë</h3><p> Një model Gemini 2.0 Flash i optimizuar për efikasitet të kostos dhe vonesë të ulët.</p><p> <a href="https://aistudio.google.com?model=gemini-2.0-flash-lite&hl=sq" class="gemini-api-model-button">Provojeni në Google AI Studio</a></p><h4 id="model-details_5" data-text=" Detajet e modelit" tabindex="-1"> Detajet e modelit</h4><table class="gemini-api-model-table"><tr><th> Pronë</th><th> Përshkrimi</th></tr><tr><td> Kodi i modelit të <span class="google-symbols" aria-hidden="true">kartës së identitetit</span></td><td> <code translate="no" dir="ltr">gemini-2.0-flash-lite</code></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">ruaj</span> llojet e të dhënave të mbështetura</td><td class="gemini-api-model-table-grid"><section><p> <b>Të dhënat hyrëse</b></p><p> Audio, imazhe, video dhe tekst</p></section><section><p> <b>Prodhimi</b></p><p> Tekst</p></section></td></tr><tr><td> Limitet <span class="google-symbols" aria-hidden="true">e</span> token-it <sup><a href="https://ai.google.dev/gemini-api/docs/tokens?hl=sq" rel="footnote">[*]</a></sup></td><td class="gemini-api-model-table-grid"><section><p> <b>Limiti i tokenit të hyrjes</b></p><p> 1,048,576</p></section><section><p> <b>Limiti i tokenit të daljes</b></p><p> 8,192</p></section></td></tr><tr><td> Aftësitë e <span class="google-symbols" aria-hidden="true" translate="no">handyman</span></td><td class="gemini-api-model-table-grid"><section><p> <b>Gjenerimi i audios</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API-ja e grupeve</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ruajtja në memorje</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Ekzekutimi i kodit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkim skedarësh</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Thirrja e funksionit</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Tokëzimi me Google Maps</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Gjenerimi i imazhit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>API i drejtpërdrejtë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Kërkimi në tokë</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Rezultatet e strukturuara</b></p><p> <span class="gemini-api-supported">Mbështetur</span></p></section><section><p> <b>Të menduarit</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section><section><p> <b>Konteksti i URL-së</b></p><p> <span class="gemini-api-not-supported">Nuk mbështetet</span></p></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">123</span> Versione</td><td><section> <span>Lexoni <a href="https://ai.google.dev/gemini-api/docs/models/gemini?hl=sq#model-versions">modelet e versionit të modelit</a> për më shumë detaje.</span><ul><li> Më i fundit: <code translate="no" dir="ltr">gemini-2.0-flash-lite</code></li><li> I qëndrueshëm: <code translate="no" dir="ltr">gemini-2.0-flash-lite-001</code></li></ul></section></td></tr><tr><td> <span class="google-symbols" aria-hidden="true">calendar_month</span> Përditësimi më i fundit</td><td> Shkurt 2025</td></tr><tr><td> <span class="google-symbols" aria-hidden="true">Kufiri</span> i njohurive</td><td> Gusht 2024 </td></tr></table></devsite-expandable></section></div></div><p><br></p><h2 id="model-versions" data-text=" Modelet e emrit të versionit të modelit" tabindex="-1"> Modelet e emrit të versionit të modelit</h2><p> Modelet Gemini janë të disponueshme në versione <em>të qëndrueshme</em> , <em>paraprake</em> , <em>më të fundit</em> ose <em>eksperimentale</em> .</p><aside class="note"> <strong>Shënim:</strong> <span>Lista e mëposhtme i referohet konventës së emërtimit të vargut të modelit që nga shtatori 2025. Modelet e lëshuara para kësaj mund të kenë konventa të ndryshme emërtimi. Referojuni vargut të saktë të modelit nëse po përdorni një model më të vjetër.</span></aside><h3 id="stable" data-text=" Stallë" tabindex="-1"> Stallë</h3><p> Tregon një model të qëndrueshëm specifik. Modelet e qëndrueshme zakonisht nuk ndryshojnë. Shumica e aplikacioneve të prodhimit duhet të përdorin një model të qëndrueshëm specifik.</p><p> Për shembull: <code translate="no" dir="ltr">gemini-2.5-flash</code> .</p><h3 id="preview" data-text=" Pamje paraprake" tabindex="-1"> Pamje paraprake</h3><p> Tregon një model paraprak që mund të përdoret për prodhim. Modelet paraprake zakonisht do të kenë të aktivizuar faturimin, mund të vijnë me kufizime më kufizuese të tarifave dhe do të hiqen nga përdorimi me një njoftim paraprak prej të paktën 2 javësh.</p><p> Për shembull: <code translate="no" dir="ltr">gemini-2.5-flash-preview-09-2025</code> .</p><h3 id="latest" data-text=" Më të fundit" tabindex="-1"> Më të fundit</h3><p> Tregon versionin më të fundit për një variant specifik të modelit. Ky mund të jetë një version i qëndrueshëm, paraprak ose eksperimental. Ky pseudonim do të zëvendësohet me çdo version të ri të një varianti specifik të modelit. Një <strong>njoftim 2-javor</strong> do të jepet me anë të email-it përpara se të ndryshohet versioni pas versionit më të fundit.</p><p> Për shembull: <code translate="no" dir="ltr">gemini-flash-latest</code> .</p><h3 id="experimental" data-text=" Eksperimentale" tabindex="-1"> Eksperimentale</h3><p> Tregon një model eksperimental i cili zakonisht nuk do të jetë i përshtatshëm për përdorim në prodhim dhe do të vijë me kufizime më kufizuese të shpejtësisë. Ne publikojmë modele eksperimentale për të mbledhur reagime dhe për t&#39;ua sjellë shpejt përditësimet tona më të fundit zhvilluesve.</p><p> Modelet eksperimentale nuk janë të qëndrueshme dhe disponueshmëria e pikave fundore të modelit mund të ndryshojë.</p><h2 id="model_deprecations" data-text=" Kundërshtimet e modelit" tabindex="-1"> Kundërshtimet e modelit</h2><p> Për informacion në lidhje me heqjet e modelit, vizitoni faqen <a href="https://ai.google.dev/gemini-api/docs/deprecations?hl=sq">e heqjeve të modelit Gemini</a> . </p><link href="https://ai.google.dev/site-assets/css/style.css?v=3&hl=sq" rel="stylesheet" data-page-link><link href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" data-page-link>
+  
+
+  
+</div>
+
+  
+    
+    
+      
+    <devsite-thumb-rating position="footer">
+    </devsite-thumb-rating>
+  
+       
+         <devsite-feedback
+  position="footer"
+  project-name="Gemini API"
+  product-id="5292923"
+  bucket="documentation"
+  context=""
+  version="t-devsite-webserver-20251113-r00-rc00.473353542654510286"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="footer"
+  class="nocontent"
+  
+  
+  
+    project-icon="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/touchicon-180-new.png"
+  
+  
+  
+  >
+
+  <button>
+  
+    
+    Dërgo komente
+  
+  </button>
+</devsite-feedback>
+       
+    
+    
+  
+
+  <div class="devsite-floating-action-buttons"></div></article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Përveçse siç përcaktohet ndryshe, përmbajtja e kësaj faqeje është e licencuar sipas <a href="https://creativecommons.org/licenses/by/4.0/">licencës së atribuimit 4.0 të Creative Commons</a> dhe kampionët e kodit janë licencuar sipas <a href="https://www.apache.org/licenses/LICENSE-2.0">licencës së Apache 2.0</a>. Për detaje, shiko <a href="https://developers.google.com/site-policies?hl=sq">Politikat e sajtit të Google Developers</a>. Java është një markë tregtare e regjistruar e Oracle dhe/ose filialeve të tij.</p>
+  <p>Përditësimi i fundit: 2025-11-22 UTC.</p>
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+    
+    
+    <template class="devsite-thumb-rating-feedback">
+      <devsite-feedback
+  position="thumb-rating"
+  project-name="Gemini API"
+  product-id="5292923"
+  bucket="documentation"
+  context=""
+  version="t-devsite-webserver-20251113-r00-rc00.473353542654510286"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="thumb-rating"
+  class="nocontent"
+  
+  
+  
+    project-icon="https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/touchicon-180-new.png"
+  
+  
+  
+  >
+
+  <button>
+  
+    Duhet të na tregosh më shumë?
+  
+  </button>
+</devsite-feedback>
+    </template>
+  
+  
+    <template class="devsite-content-data-template">
+      [[["E lehtë për t'u kuptuar","easyToUnderstand","thumb-up"],["E zgjidhi problemin tim","solvedMyProblem","thumb-up"],["Tjetër","otherUp","thumb-up"]],[["Mungojnë informacionet që më nevojiten","missingTheInformationINeed","thumb-down"],["Shumë e ndërlikuar/shumë hapa","tooComplicatedTooManySteps","thumb-down"],["E papërditësuar","outOfDate","thumb-down"],["Problem përkthimi","translationIssue","thumb-down"],["Problem me kampionët/kodin","samplesCodeIssue","thumb-down"],["Tjetër","otherDown","thumb-down"]],["Përditësimi i fundit: 2025-11-22 UTC."],[],[]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Lidhjet e fundit të faqes">
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Lidhjet utilitare">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/terms?hl=sq"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Kushtet
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy?hl=sq"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privatësia
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="sq"
+        >Shqip</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel>
+          
+        </devsite-panel>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [], &#34;ga4p&#34;: [], &#34;gtm&#34;: [{&#34;id&#34;: &#34;GTM-TC2MQKS8&#34;, &#34;purpose&#34;: 0}], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;True&#34;, &#34;requested&#34;: &#34;sq&#34;, &#34;served&#34;: &#34;sq&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;Gemini API&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;googledevai&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+    
+<script nonce="BRoz3FOopdPHOUj3i9gelHLO7iqRKH">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/js/app_loader.js', '[59,"sq",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d","https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai","https://googledevai-dot-devsite-v2-prod-3p.appspot.com",1,null,["/_pwa/googledevai/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v210625d4186b230b6e4f2892d2ebde056c890c9488f9b443a741ca79ae70171d/googledevai/images/favicon-new.png","/_static/googledevai/images/gemini-api-logo.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Inter:400,500|Inter+Tight:300,500,600&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyCNm9YxQumEXwGJgTDjxoxXK6m1F-9720Q","AIzaSyCc76DZePGtoyUjqKrLdsMGk_ry7sljLbY","ai.google.dev","AIzaSyB9bqgQ2t11WJsOX8qNsCQ6U-w91mmqF-I","AIzaSyAdYnStPdzjcJJtQ0mvIaeaMKj7_t6J_Fg",null,null,null,["Cloud__cache_serialized_dynamic_content","DevPro__enable_developer_subscriptions","Search__enable_page_map","Profiles__enable_release_notes_notifications","Profiles__require_profile_eligibility_for_signin","Profiles__enable_playlist_community_acl","MiscFeatureFlags__enable_llms_txt","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__developers_footer_dark_image","Concierge__enable_actions_menu","CloudShell__cloud_shell_button","MiscFeatureFlags__enable_firebase_utm","MiscFeatureFlags__enable_appearance_cookies","Search__enable_ai_search_summaries_for_all","MiscFeatureFlags__gdp_dashboard_reskin_enabled","DevPro__enable_code_assist","Cloud__enable_free_trial_server_call","Profiles__enable_completecodelab_endpoint","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_explain_this_code","DevPro__enable_cloud_innovators_plus","Concierge__enable_pushui","Search__enable_dynamic_content_confidential_banner","Search__enable_ai_eligibility_checks","DevPro__remove_eu_tax_intake_form","DevPro__enable_free_benefits","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_project_body_class","Profiles__enable_dashboard_curated_recommendations","Cloud__enable_cloud_shell","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_callout_notifications","Cloud__fast_free_trial","OnSwitch__enable","Profiles__enable_auto_apply_credits","MiscFeatureFlags__developers_footer_image","Profiles__enable_developer_profiles_callout","Profiles__enable_join_program_group_endpoint","Profiles__enable_profile_collections","DevPro__enable_embed_profile_creation","MiscFeatureFlags__emergency_css","Profiles__enable_completequiz_endpoint","Concierge__enable_devsite_llm_tools","Profiles__enable_complete_playlist_endpoint","Profiles__enable_purchase_prompts","DevPro__enable_vertex_credit_card","MiscFeatureFlags__enable_variable_operator_index_yaml","MiscFeatureFlags__enable_variable_operator","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_view_transitions","DevPro__enable_google_payments","Analytics__enable_clearcut_logging","Profiles__enable_developer_profile_pages_as_content","Profiles__enable_developer_profile_benefits_ui_redesign","BookNav__enable_tenant_cache_key","DevPro__enable_firebase_workspaces_card","Cloud__enable_cloud_dlp_service","DevPro__enable_enterprise","Profiles__enable_user_type","DevPro__enable_google_one_card","DevPro__enable_devpro_offers","Profiles__enable_recognition_badges","DevPro__enable_nvidia_credits_card","Profiles__enable_page_saving","MiscFeatureFlags__enable_framebox_badge_methods","Cloud__enable_llm_concierge_chat","Cloud__enable_legacy_calculator_redirect","MiscFeatureFlags__enable_project_variables","CloudShell__cloud_code_overflow_menu","DevPro__enable_google_payments_buyflow","Profiles__enable_stripe_subscription_management","Profiles__enable_awarding_url","Search__enable_suggestions_from_borg","Experiments__reqs_query_experiments","Profiles__enable_public_developer_profiles","MiscFeatureFlags__enable_explicit_template_dependencies","TpcFeatures__proxy_prod_host"],null,null,"AIzaSyA58TaKli1DculwmAmbpzLVGuWc8eCQgQc","https://developerscontentserving-pa.googleapis.com","AIzaSyDWBU60w0P9hEkr29kkksYs8Z7gvZ8u_wc","https://developerscontentsearch-pa.googleapis.com",2,4,null,"https://developerprofiles-pa.googleapis.com",[59,"googledevai","Google AI for Developers","ai.google.dev",null,"googledevai-dot-devsite-v2-prod-3p.appspot.com",null,null,[null,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],null,null,null,null,[1],[1,1,null,1,1],null,null,null,null,null,[1]],null,[73,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,1,null,null,null,null,null,null,null,2,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[44,2,4,6,7,12,14,15,17,18,20,21,22,23,28,29,32,37,39,40,43],null,[[],[1,1],null,1],[[null,null,null,null,null,["GTM-TC2MQKS8"],null,null,null,null,null,[["GTM-TC2MQKS8",1]],1]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[]],null,null,1,1,"https://developerscontentinsights-pa.googleapis.com","AIzaSyC11xEGtFhkmSh_iF6l_itbxnFz2GrIBOg","AIzaSyAXJ10nRF73mmdSDINgkCNX5bbd2KPcWm8","https://developers.googleapis.com",["https://aistudio.google.com"],null,"AIzaSyCjP0KOnHfv8mwe38sfzZJMOnqE3HvrD4A",null,"https://developerslogging.googleapis.com"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

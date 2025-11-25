@@ -1,0 +1,14 @@
+{
+  "name": "gemini-quickstart",
+  "version": "v1.0.0",
+  "source": "https://ai.google.dev/gemini-api/docs/quickstart",
+  "ingestedAt": "2025-11-25T17:05:12.758Z",
+  "hash": "4d3ec7eae4e28f118dd18d7c8fd572f1c836f63b321f7bb5ac37230298f294d9",
+  "files": [
+    {
+      "rawPath": ".culture\\external\\gemini-quickstart\\v1.0.0\\raw\\index.html",
+      "shadowPath": ".culture\\external\\gemini-quickstart\\v1.0.0\\shadow\\index.md",
+      "originalUrl": "https://ai.google.dev/gemini-api/docs/quickstart"
+    }
+  ]
+}

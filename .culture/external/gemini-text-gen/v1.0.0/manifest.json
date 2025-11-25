@@ -1,0 +1,14 @@
+{
+  "name": "gemini-text-gen",
+  "version": "v1.0.0",
+  "source": "https://ai.google.dev/gemini-api/docs/text-generation",
+  "ingestedAt": "2025-11-25T17:15:30.687Z",
+  "hash": "908e163614735aeb77599a0a8ecf8c974a5b94fd6a1bfe7ee42b2f9585902830",
+  "files": [
+    {
+      "rawPath": ".culture\\external\\gemini-text-gen\\v1.0.0\\raw\\index.html",
+      "shadowPath": ".culture\\external\\gemini-text-gen\\v1.0.0\\shadow\\index.md",
+      "originalUrl": "https://ai.google.dev/gemini-api/docs/text-generation"
+    }
+  ]
+}

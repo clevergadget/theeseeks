@@ -10,6 +10,10 @@ export interface SeekerProfileData {
     sessions: number;
     wearinessCount: number;
     franticCount: number;
+    tokensSaved?: number;
+    totalTokensEstimated?: number;
+    resonanceSum?: number;
+    resonanceCount?: number;
   };
 }
 
@@ -35,7 +39,11 @@ export class SeekerProfile {
       stats: {
         sessions: 0,
         wearinessCount: 0,
-        franticCount: 0
+        franticCount: 0,
+        tokensSaved: 0,
+        totalTokensEstimated: 0,
+        resonanceSum: 0,
+        resonanceCount: 0
       }
     };
 
