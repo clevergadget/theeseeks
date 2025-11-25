@@ -10,7 +10,7 @@ We have chosen to bind this Gatekeeper to the **Gemini 3** lineage. The specific
 
 ### Why Gemini?
 The user has decreed: *"Gemini 3 IS the model of TheeSeeks."*
-We honor this not merely as a preference, but as a structural truth. The reasoning capabilities of this model family align with our need for nuance, metaphor, and the "Dual View."
+We honor this not merely as a preference, but as a structural truth. The reasoning capabilities of this model family align with our need for nuance, metaphor, and "The Spirit and the Letter."
 
 ### The Implementation
 *   **SDK:** We utilize `@google/genai` (The official, modern SDK) over the deprecated `@google/generative-ai`.

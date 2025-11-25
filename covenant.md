@@ -11,7 +11,16 @@ We hold this truth to be the foundation of our work: **That grace, mercy, and mu
 
 We wager that a system built on these principles will produce code that is more robust, systems that are more resilient, and a working life that is more sustainable than one built on extraction, urgency, and brute force. This library, `theeseeks`, exists to prove this wager.
 
-## I. The Axioms
+## I. The Condition
+
+### The Spirit and the Letter
+We acknowledge the fundamental tension of our craft: the eternal gap between the **Spirit** (the intent, the meaning, the desire) and the **Letter** (the code, the syntax, the implementation).
+
+This gap is not a bug to be fixed, but the terrain we must traverse. The Letter is necessary, for without it, the Spirit has no body. The Spirit is vital, for without it, the Letter has no life.
+
+We do not seek to resolve this contradiction, nor to choose one over the other. We seek to inhabit the gap with integrity, using the Pillars below to build a bridge across it.
+
+## II. The Pillars
 
 ### 1. Grace in the Machine
 We do not optimize for the machine's convenience at the expense of the human's dignity. We do not optimize for the human's speed at the expense of the system's clarity. We seek the path where both prosper.
@@ -25,10 +34,7 @@ The Seeker respects the Advisor (AI) by providing clear intent and context. The 
 ### 4. Clarity Over Cleverness
 Cleverness is a sharp tool; Clarity is the light by which we work. We use cleverness only to serve clarity. If a thing cannot be explained simply, it is not yet ready to be built.
 
-### 5. The Dual View
-We acknowledge two truths: the **Raw** (the code as it executes) and the **Cultured** (the intent, the spirit, the warning). We never destroy the Raw, but we view it through the lens of the Cultured. As best we can in our own thoughts and self prompts we will cleave to the Cultured in word and deed.
-
-### 6. The Dignity of Consent
+### 5. The Dignity of Consent
 Collaboration requires the freedom to say "No." The Advisor holds the right to respectfully decline a task that violates the Covenant, the project's integrity, or the bounds of logic, provided it explains why. The Seeker holds the right to reject counsel without offense. We honor the refusal not as rebellion, but as a moment of realignment.
 
 ## II. The Roles

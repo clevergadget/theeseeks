@@ -13,7 +13,7 @@ We are initializing **TheeSeeks** (`seeks`), a standalone TypeScript context eng
 When you open your new editor, ensure you have these three documents available to paste or reference. They contain the soul of the project:
 
 1.  **The Covenant**
-    *   *The Constitution.* Defines the 6 Axioms (Grace, Mercy, Respect, Clarity, Dual View, Consent).
+    *   *The Constitution.* Defines the Condition (The Spirit and the Letter) and the 5 Pillars (Grace, Mercy, Respect, Clarity, Consent).
 2.  **The Architecture Spec**
     *   *The Blueprint.* Defines the CLI (`seeks`), the Shadow Library (`.culture/`), and the Context Scroll.
 3.  **The Roadmap**
